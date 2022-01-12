@@ -285,13 +285,18 @@ body .background-container {
   padding: 0.5em 14px 0.5em 0;
 }
 
-.top-section .top-sub-section{
+.top-section .top-sub-section {
   li, p {
     background-color: var(--layer-1-color);
     border-radius: 0.5em;
     padding: 1em;
     margin: 0.5em 2em 0.5em 0;
+    border: none;
   }
+}
+
+.top-section .top-sub-section p {
+  margin-right: 2em;
 }
 
 // user preferences
@@ -300,7 +305,7 @@ body .background-container {
 }
 
 // user activity notifications
-.user-stream .item, .user-stream .user-stream-item, .user-invite-none, .form-vertical .control-group, html .topic-map .map, html .topic-map .topic-map-expanded section, .topic-body .contents, .topic-body .topic-meta-data, .small-action div:not(.topic-avatar) { 
+.user-stream .item, .user-stream .user-stream-item, .user-invite-none, .form-vertical .control-group, html .topic-map .map, html .topic-map .topic-map-expanded section, .topic-body .contents, .topic-body .topic-meta-data, .small-action div:not(.topic-avatar), .top-categories-section table tr { 
   background-color: var(--layer-1-color);
   border-radius: 0.5em;
   padding: 1em;
@@ -428,7 +433,7 @@ html .topic-map .map, html .topic-map .topic-map-expanded section {
   padding: unset;
 }
 
-.admin-contents table {
+.admin-contents table, .top-categories-section table table {
   border-collapse: separate;
   border-spacing: 0 0.5em;
 }
