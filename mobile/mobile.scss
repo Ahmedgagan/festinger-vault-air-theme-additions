@@ -1,0 +1,36 @@
+.topic-body, .small-action {
+  background-color: var(--layer-1-color);
+  border-radius: 0.5em;
+  padding: 1em;
+  border: none;
+}
+
+.topic-post article {
+  border: none;
+}
+
+.small-action {
+  margin: 1em 0 0.75em 0;
+  padding: 0;
+}
+
+.small-action div:not(.topic-avatar) {
+  margin: 0;
+}
+
+.topic-avatar {
+  padding: 1em 0 0.5em 1em;
+}
+
+.top-section .top-sub-section li, .top-section .top-sub-section p {
+  margin-right: 0;
+}
+
+.user-main .user-content {
+  background-color: transparent;
+}
+
+// user preferences
+.control-group {
+  width: unset;
+}
