@@ -429,12 +429,12 @@ html .topic-map .map, html .topic-map .topic-map-expanded section {
   padding: unset;
 }
 
-.admin-contents table, .top-categories-section table table {
+.admin-contents table, .top-categories-section table {
   border-collapse: separate;
   border-spacing: 0 0.5em;
 }
 
-tbody {
+.top-categories-section table tbody {
   border: none;
 }
 
