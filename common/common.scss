@@ -286,17 +286,13 @@ body .background-container {
 }
 
 .top-section .top-sub-section {
-  li, p {
+  li {
     background-color: var(--layer-1-color);
     border-radius: 0.5em;
     padding: 1em;
     margin: 0.5em 2em 0.5em 0;
     border: none;
   }
-}
-
-.top-section .top-sub-section p {
-  margin-right: 2em;
 }
 
 // user preferences
