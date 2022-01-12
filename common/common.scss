@@ -414,6 +414,15 @@ html .topic-map .map, html .topic-map .topic-map-expanded section {
   margin-bottom: 0.5em;
 }
 
+.admin-customize .theme.settings .theme-setting:not(.control-unit) {
+  padding: 0;
+  margin: 0;
+}
+
+.admin-customize .theme.settings .theme-setting {
+  padding-bottom: 1em;
+}
+
 .admin-report.activity-metrics div, .counters-list .admin-report .main {
   border: none;
   padding: unset;
