@@ -434,6 +434,10 @@ html .topic-map .map, html .topic-map .topic-map-expanded section {
   border-spacing: 0 0.5em;
 }
 
+tbody {
+  border: none;
+}
+
 .version-checks .section-title, .dashboard .navigation, .dashboard-next .navigation, .dashboard .section .section-title, .dashboard-next .section .section-title, .version-checks .section-title, .dashboard .navigation, .dashboard-next .navigation, .admin-report-table .table, .admin-detail {
   border: none;
 }
