@@ -90,6 +90,11 @@ body .background-container {
       opacity: 1;
     }
   }
+  &:not(.active) {
+    &:hover {
+      background: none;
+    }
+  }
   &.active {
     opacity: 1;
   }
@@ -152,8 +157,7 @@ body .background-container {
   padding: 0 5px;
 }
 
-td.topic-list-data.num.views,
-.topic-list-data.num.views {
+tr .topic-list-data.num.views {
   display: table-cell;
   order: 4;
 }
