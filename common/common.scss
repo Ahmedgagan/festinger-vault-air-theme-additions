@@ -17,6 +17,26 @@ $primary-very-high: mix($color-1: #fff, $color-2: #2c1d58, $weight: 85%);
   --primary-medium: #{$primary-medium};
   --primary-high: #{$primary-high};
   --primary-very-high: #{$primary-very-high};
+
+  --base-font-size-smallest: 0.875em;
+  --base-font-size-smaller: 0.938em;
+  --base-font-size: 1em;
+  --base-font-size-larger: 1.125em;
+  --base-font-size-largest: 1.25em;
+
+  --font-up-6: 2.3585em;
+  --font-up-5: 2.0625em;
+  --font-up-4: 1.8136em;
+  --font-up-3: 1.5782em;
+  --font-up-2: 1.382em;
+  --font-up-1: 1.2112em;
+  --font-0: 1.0625em;
+  --font-down-1: 0.9331em;
+  --font-down-2: 0.8204em;
+  --font-down-3: 0.7224em;
+  --font-down-4: 0.637em;
+  --font-down-5: 0.5625em;
+  --font-down-6: 0.498em;
 }
 
 .btn,
