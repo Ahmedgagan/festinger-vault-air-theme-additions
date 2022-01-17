@@ -103,7 +103,7 @@ body .background-container {
   opacity: 1;
   margin-left: 0.5em;
   background-color: var(--main-background-color);
-  color: rgba($color: var(--primary), $alpha: 0.4);
+  color: var(--primary-medium);
   &:hover {
     background-color: var(--main-background-color);
     color: var(--primary);
