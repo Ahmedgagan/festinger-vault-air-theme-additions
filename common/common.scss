@@ -123,6 +123,9 @@ body .background-container {
 }
 
 // topic list
+#list-area .show-more.has-topics .alert {
+  padding: 0;
+}
 .full-width .contents, .loading-container {
   .topic-list {
     border-collapse: separate;
@@ -260,7 +263,7 @@ td.topic-list-data.num.views {
 }
 
 // user activity notifications
-.user-stream .item, .user-stream .user-stream-item, .user-invite-none, .form-vertical .control-group, html .topic-map .map, html .topic-map .topic-map-expanded section, .topic-body .contents, .topic-body .topic-meta-data, .small-action div:not(.topic-avatar), .top-categories-section table tr { 
+.user-stream .item, .user-stream .user-stream-item, .user-invite-none, .form-vertical .control-group, html .topic-map .map, html .topic-map .topic-map-expanded section, .topic-body .contents, .topic-body .topic-meta-data, .small-action div:not(.topic-avatar):not(.topic-post-visited), .top-categories-section table tr {
   background-color: var(--layer-1-color);
   border-radius: 0.5em;
   padding: 1em;
@@ -295,7 +298,7 @@ td.topic-list-data.num.views {
   }
 }
 
-.post-notice, .topic-body, .topic-map, .topic-map section, .small-action, .topic-timer-info, .archetype-private_message .topic-body .cooked {
+.post-notice, .topic-body, .topic-map, .topic-map section, .topic-timer-info, .archetype-private_message .topic-body .cooked {
   border: none;
 }
 
@@ -322,6 +325,10 @@ td.topic-list-data.num.views {
 
 .archetype-private_message .topic-body .cooked {
   margin-top: 0;
+}
+
+.who-liked, .who-read {
+  padding: 0.5em;
 }
 
 .topic-body .topic-meta-data {
