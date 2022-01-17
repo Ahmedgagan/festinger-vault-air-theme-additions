@@ -104,6 +104,7 @@ body .background-container {
   background-color: var(--main-background-color);
 
   &:hover {
+    background-color: var(--main-background-color);
     color: var(--primary);
   }
 }
@@ -179,13 +180,15 @@ td.topic-list-data.num.views {
       border: none;
       box-shadow: none;
       &:hover {
+        border: none;
         opacity: 1;
       }
     }
     &:hover {
       background-color: #412379;
-      border: none !important;
-      transition: 20ms ease-in !important;
+      box-shadow: -4px 0 var(--quaternary);
+      border: none;
+      transition: 20ms ease-in;
     }
     // to be removed
     .topic-excerpt {
