@@ -82,7 +82,7 @@ body .background-container {
 }
 
 // admin nav pills
-.nav-pills>li>a {
+html .nav-pills>li>a {
   opacity: 0.4;
   &:hover {
     &:not(.active) {
