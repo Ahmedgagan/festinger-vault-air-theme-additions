@@ -167,21 +167,21 @@ body .background-container {
 
 .full-width .contents, .loading-container {
   .topic-list .topic-list-body .topic-list-item {
-    border-radius: 0.5em;
-    border: none;
-    background-color: var(--layer-1-color);
+    border-radius: 0.5em !important;
+    border: none !important;
+    background-color: var(--layer-1-color) !important;
     box-shadow: -4px 0 var(--quaternary) !important;
     &.visited {
       border: none !important;
       box-shadow: none !important;
       &:hover {
-        opacity: 1;
+        opacity: 1 !important;
       }
     }
     &:hover {
-      background-color: #412379;
-      border: none;
-      transition: 100ms ease-in;
+      background-color: #412379 !important;
+      border: none !important;
+      transition: 100ms ease-in !important;
     }
     // to be removed
     .topic-excerpt {
