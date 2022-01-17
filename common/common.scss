@@ -295,7 +295,7 @@ tr .topic-list-data.num.views {
 }
 
 // user activity notifications
-.user-stream .item, .user-stream .user-stream-item, .user-invite-none, .form-vertical .control-group, html .topic-map .map, html .topic-map .topic-map-expanded section, .topic-body .contents, .topic-body .topic-meta-data, .small-action div:not(.topic-avatar):not(.topic-post-visited), .top-categories-section table tr {
+.user-stream .item, .user-stream .user-stream-item, .user-invite-none, .form-vertical .control-group, html .topic-map .map, html .topic-map .topic-map-expanded section, .topic-body .contents, .topic-body .topic-meta-data, .small-action:not(.topic-avatar):not(.topic-post-visited), .top-categories-section table tr {
   background-color: var(--layer-1-color);
   border-radius: 0.5em;
   padding: 1em;
@@ -409,6 +409,7 @@ tr .topic-list-data.num.views {
 
 .alert {
   border-radius: 0.5em;
+  margin-top: 0;
 
   &.alert-info {
     background-color: var(--highlight);

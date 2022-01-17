@@ -1,8 +1,33 @@
-.topic-body, .small-action {
+.heading, .topic-body .contents, .topic-avatar, .small-action:not(.topic-post-visited) {
   background-color: var(--layer-1-color);
   border-radius: 0.5em;
   padding: 1em;
   border: none;
+}
+
+.topic-body .contents {
+  padding: 0.5em;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.topic-body .topic-map {
+  margin-top: 0.5em;
+}
+
+div.topic-avatar {
+  padding: 0.31em 0.5em;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.topic-meta-data {
+  display: inherit;
+  border-top-left-radius: 0;
+}
+
+.topic-map, html .topic-map .map, .regular.contents, .small-action.topic-post-visited, .topic-post-visited-line.post-1 {
+  margin: 0;
 }
 
 .topic-post article {
@@ -33,4 +58,21 @@
 // user preferences
 .control-group {
   width: unset;
+}
+
+.topic-list .topic-list-item td.topic-list-data {
+  padding: 5px 5px;
+}
+
+.topic-post article {
+  padding: 5px;
+}
+
+.alert {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.topic-map-expanded {
+  margin-top: 0.5em;
 }
