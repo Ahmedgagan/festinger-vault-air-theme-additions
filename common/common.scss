@@ -94,8 +94,20 @@ html, h1, h2, h3, h4, h5, h6, hr, pre, code {
   background-color: var(--highlight);
 }
 
-blockquote, .hljs {
+.hljs, blockquote {
   border-radius: 0.5em;
+}
+
+aside.quote .title {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+aside.quote blockquote {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
 }
 
 html body #main-outlet,
@@ -295,7 +307,7 @@ tr .topic-list-data.num.views {
 }
 
 // user activity notifications
-.user-stream .item, .user-stream .user-stream-item, .user-invite-none, .form-vertical .control-group, html .topic-map .map, html .topic-map .topic-map-expanded section, .topic-body .contents, .topic-body .topic-meta-data, .small-action:not(.topic-avatar):not(.topic-post-visited), .top-categories-section table tr {
+.user-stream .item, .user-stream .user-stream-item, .user-invite-none, .form-vertical .control-group, html .topic-map .map, html .topic-map .topic-map-expanded section, .topic-body .contents, .topic-body .topic-meta-data, .small-action-desc, .top-categories-section table tr {
   background-color: var(--layer-1-color);
   border-radius: 0.5em;
   padding: 1em;
@@ -374,9 +386,6 @@ tr .topic-list-data.num.views {
   min-height: 0 !important;
 }
 
-// html .topic-map .map, html .topic-map .topic-map-expanded section {
-//   background-color: var(--main-background-color);
-// }
 .topic-map .buttons .btn {
   background: transparent;
 }
@@ -385,8 +394,17 @@ tr .topic-list-data.num.views {
   background: var(--card-hover);
 }
 
+.topic-body .contents {
+  margin: 0;
+}
+
+.small-action {
+  margin-bottom: 0.75em;
+}
+
 .small-action {
   max-width: 768px;
+  border: none;
   div:not(.topic-avatar) {
     padding: 0.75em;
     .custom-message {
