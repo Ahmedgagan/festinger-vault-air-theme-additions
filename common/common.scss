@@ -86,7 +86,7 @@ body .background-container {
   opacity: 0.4;
   &:hover {
     &:not(.active) {
-      background: transparent !important;
+      background: none;
       opacity: 1;
     }
   }
@@ -100,9 +100,10 @@ body .background-container {
 }
 
 .admin-controls .nav-pills>li>a {
+  opacity: 1;
   margin-left: 0.5em;
   background-color: var(--main-background-color);
-
+  color: rgba($color: var(--primary), $alpha: 0.4);
   &:hover {
     background-color: var(--main-background-color);
     color: var(--primary);
