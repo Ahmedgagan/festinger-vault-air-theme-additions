@@ -1,51 +1,4 @@
-.heading, .topic-body .contents, .topic-avatar, .small-action:not(.topic-post-visited) {
-  background-color: var(--layer-1-color);
-  border-radius: 0.5em;
-  padding: 1em;
-  border: none;
-}
-
-.topic-body .contents {
-  padding: 0.5em;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.topic-body .topic-map {
-  margin-top: 0.5em;
-}
-
-div.topic-avatar {
-  padding: 0.31em 0.5em;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.topic-meta-data {
-  display: inherit;
-  border-top-left-radius: 0;
-}
-
-.topic-map, html .topic-map .map, .regular.contents, .small-action.topic-post-visited, .topic-post-visited-line.post-1 {
-  margin: 0;
-}
-
-.topic-post article {
-  border: none;
-}
-
-.small-action {
-  margin: 1em 0 0.75em 0;
-  padding: 0;
-}
-
-.small-action div:not(.topic-avatar) {
-  margin: 0;
-}
-
-.topic-avatar {
-  padding: 1em 0 0.5em 1em;
-}
+@import 'mobile/topic-view';
 
 .top-section .top-sub-section li, .top-section .top-sub-section p {
   margin-right: 0;
@@ -64,15 +17,81 @@ div.topic-avatar {
   padding: 5px 5px;
 }
 
-.topic-post article {
-  padding: 5px;
-}
-
 .alert {
   margin-top: 0;
   margin-bottom: 0.5em;
 }
 
-.topic-map-expanded {
-  margin-top: 0.5em;
+.topic-list-item.highlighted, tr.highlighted, .topic-body.highlighted {
+  animation: none;
+}
+
+.full-width .contents, .loading-container {
+  .topic-list .topic-list-body tr.topic-list-item {
+    box-shadow: -2px 0 var(--quaternary);
+    &:hover {
+      box-shadow: -2px 0 var(--quaternary);
+    }
+  }
+}
+
+// category boxes
+.category-boxes .category-box:nth-child(odd) {
+  margin-right: 0;
+}
+
+.categories-and-latest div.column.categories {
+  margin-top: 3.5em;
+}
+
+// topic list
+.topic-item-stats {
+  .clearfix {
+    display: none;
+  }
+  display: flex;
+  justify-content: space-between;
+}
+
+.topic-item-stats.clearfix::before, .topic-item-stats.clearfix::after {
+  display: none;
+}
+
+.full-width .contents .topic-list .topic-list-body .topic-list-item .topic-list-data.posts {
+  float: right;
+  padding-right: 0.5em;
+}
+
+.topic-list .topic-list-item .topic-list-data {
+  padding: unset;
+}
+
+.full-width .contents .topic-list .topic-list-item .posts-map .number {
+  margin-right: 0;
+}
+
+.topic-list .topic-item-stats .category a {
+  max-width: 180px;
+}
+
+.categories-list .list-container {
+  padding-top: 0 !important;
+}
+
+.topic-map {
+  margin: 0;
+}
+
+html body #main-outlet {
+  padding: 0.5em;
+  margin: 0;
+}
+
+html body.static-tos #main-outlet, html body.static-privacy #main-outlet, html body.about-page #main-outlet, html body.static-faq #main-outlet, html body.tags-page #main-outlet, html body.badges-page #main-outlet, html body.archetype-regular #main-outlet, html body.archetype-private_message #main-outlet, html body.admin-interface #main-outlet, html body.user-summary-page #main-outlet, html body.user-activity-page #main-outlet, html body.user-invites-page #main-outlet, html body.user-preferences-page #main-outlet, html body.staff:not(.navigation-topics) #main-outlet {
+  width: calc(100% - 1em);
+  background: transparent;
+}
+
+.container.posts>.row {
+  max-width: calc(100vw - 1em);
 }

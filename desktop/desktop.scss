@@ -1,0 +1,112 @@
+.topic-body div.contents {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.topic-body .contents, .topic-body .topic-meta-data, .post-notice p {
+  background-color: var(--layer-1-color);
+  border-radius: 0.5em;
+  padding: 1em;
+  border: none;
+  margin-bottom: 0.5em;
+}
+
+.topic-body {
+  padding-top: 0;
+  width: calc(100% - 59px);
+}
+
+.topic-body, .archetype-private_message .topic-body .cooked {
+  border: none;
+}
+
+.archetype-private_message .topic-body .cooked {
+  margin-top: 0;
+}
+
+.topic-body div.topic-meta-data {
+  padding: 0.5em 0.75em;
+  margin-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.archetype-private_message .current-user-post:not(.moderator) .topic-body .cooked, .topic-map {
+  background: unset;
+}
+
+.topic-body.highlighted, .archetype-private_message .topic-body.highlighted .cooked {
+  animation: none;
+}
+
+.topic-map section.map, html .topic-map .topic-map-expanded section, .small-action-desc {
+  background-color: var(--layer-1-color);
+  border-radius: 0.5em;
+  padding: 1em;
+  border: none;
+  margin-bottom: 0.5em;
+}
+
+.small-action {
+  max-width: 768px;
+  border: none;
+  div:not(.topic-avatar) {
+    padding: 0.75em;
+    .custom-message {
+      padding: 0;
+    }
+  }
+
+  margin-bottom: 0.75em;
+}
+
+.small-action.topic-post-visited .topic-post-visited-line {
+  margin: 0;
+}
+
+.post-notice, .topic-map, .topic-map section, .topic-timer-info {
+  border: none;
+}
+
+.post-notice {
+  background: none;
+  max-width: 755px;
+}
+
+.post-notice p {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+}
+
+.topic-map {
+  margin-left: 0;
+}
+
+.topic-avatar {
+  border: none;
+  margin-right: 0.75em;
+}
+
+.archetype-private_message .topic-map {
+  padding-right: 0;
+  padding-left: 1.5em;
+}
+
+.who-liked, .who-read {
+  padding: 0.5em;
+}
+
+.topic-map .buttons .btn {
+  background: transparent;
+}
+
+.topic-post {
+  min-height: 0 !important;
+}
+
+.small-action.deleted {
+  background-color: none;
+}

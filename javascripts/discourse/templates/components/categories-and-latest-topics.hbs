@@ -1,0 +1,8 @@
+<div class="column categories">
+  {{categories-boxes categories=categories}}
+</div>
+<div class="column">
+  {{categories-topic-list topics=topics filter="latest" class="latest-topic-list"}}
+</div>
+
+{{plugin-outlet name="extra-categories-column" tagName=""}}
