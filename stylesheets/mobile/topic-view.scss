@@ -1,6 +1,6 @@
 
 // topic view
-.topic-post article:not([id="post_1"]), .topic-post article[id="post_1"] .topic-body .contents, .topic-map .map, .topic-map .topic-map-expanded section, #topic-title, .small-action, .gap, .post-notice {
+.topic-post article:not([id="post_1"]), .topic-post article[id="post_1"] .topic-body .contents, .topic-map .map, .topic-map .topic-map-expanded section, .small-action, .gap, .post-notice {
   background-color: var(--layer-1-color);
   border-radius: 0.5em;
   padding: 0.5em;
