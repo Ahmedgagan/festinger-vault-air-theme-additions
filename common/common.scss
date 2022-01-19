@@ -30,6 +30,10 @@ $primary-very-high: mix($color-1: #fff, $color-2: #2c1d58, $weight: 85%);
   --primary-very-high: #{$primary-very-high};
 }
 
+.btn-flat .d-icon, nav.post-controls .actions a, nav.post-controls .actions button, nav.post-controls .actions button.create .d-icon {
+  color: var(--primary);
+}
+
 .btn,
 .btn:hover,
 .btn .d-icon,
