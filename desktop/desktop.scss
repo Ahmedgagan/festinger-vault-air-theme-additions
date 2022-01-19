@@ -50,8 +50,8 @@
 }
 
 .small-action {
-  max-width: 768px;
   border: none;
+  max-width: unset;
   div:not(.topic-avatar) {
     padding: 0.75em;
     .custom-message {
@@ -72,7 +72,8 @@
 
 .post-notice {
   background: none;
-  max-width: 755px;
+  max-width: none;
+  padding-right: 0;
 }
 
 .post-notice p {
