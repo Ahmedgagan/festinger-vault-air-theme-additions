@@ -72,16 +72,13 @@ nav.post-controls .actions button.create .d-icon {
   color: var(--primary) !important;
 }
 
-.select-kit .select-kit-collection:hover .select-kit-row.is-highlighted:hover,
-.select-kit .select-kit-row.is-selected,
-.select-kit .select-kit-row.is-selected.is-highlighted {
-  background-color: var(--highlight);
+.select-kit .select-kit-collection:hover .select-kit-row.is-highlighted:hover, .user-menu .quick-access-panel li:hover, .menu-panel .widget-link:hover, .menu-panel .widget-link:focus, .menu-panel .categories-link:hover, .menu-panel .categories-link:focus {
+  background-color: var(--card-hover);
 }
 
-.select-kit .select-kit-collection:hover .select-kit-row.is-highlighted:hover,
 .select-kit .select-kit-row.is-selected,
 .select-kit .select-kit-row.is-selected.is-highlighted {
-  background-color: var(--highlight);
+  background-color: var(--card-hover);
 
   .d-icon {
     color: var(--primary);
@@ -400,6 +397,42 @@ tr.highlighted,
   padding: 1em;
   border: none;
   margin-bottom: 0.5em;
+}
+
+.user-stream .notifications {
+  &:hover {
+    cursor: pointer;
+  }
+
+  .notification:hover {
+    background-color: var(--card-hover);
+  }
+}
+
+.user-menu .quick-access-panel li:not(.show-all) {
+  border-radius: 0.5em;
+  background-color: var(--layer-1-color);
+  margin-bottom: 0.25em;
+
+  &:not(.read) {
+    box-shadow: -2px 0 var(--quaternary);
+    background-color: var(--layer-1-color);
+    margin-left: 4px;
+    width: calc(100% - 4px);
+  }
+
+  &:hover {
+    background-color: var(--card-hover);
+  }
+}
+
+.user-stream .notification.unread {
+  background-color: var(--layer-1-color);
+  box-shadow: -4px 0 var(--quaternary);
+  &:hover {
+    cursor: pointer;
+    background-color: var(--card-hover);
+  }
 }
 
 .user-content .user-notifications-filter {
