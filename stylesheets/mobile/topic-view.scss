@@ -1,6 +1,11 @@
-
 // topic view
-.topic-post article:not([id="post_1"]), .topic-post article[id="post_1"] .topic-body .contents, .topic-map .map, .topic-map .topic-map-expanded section, .small-action, .gap, .post-notice {
+.topic-post article:not([id="post_1"]),
+.topic-post article[id="post_1"] .topic-body .contents,
+.topic-map .map,
+.topic-map .topic-map-expanded section,
+.small-action,
+.gap,
+.post-notice {
   background-color: var(--layer-1-color);
   border-radius: 0.5em;
   padding: 0.5em;
@@ -11,6 +16,22 @@
 .topic-post article[id="post_1"] .topic-body .contents {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.archetype-private_message
+  .topic-post
+  article:not([id="post_1"])
+  .topic-body
+  .cooked {
+  padding: 1.5em 0 0 0;
+}
+
+.archetype-private_message
+  .topic-post
+  article[id="post_1"]
+  .topic-body
+  .cooked {
+  padding: 0;
 }
 
 .topic-post article[id="post_1"] .topic-meta-data {
@@ -31,15 +52,24 @@
   border: none;
 }
 
-.small-action, .topic-post article {
+.small-action,
+.topic-post article {
   padding: 0;
 }
 
-.topic-map, .topic-map .topic-map-expanded section, .topic-map section, .topic-post article, .topic-timer-info {
+.topic-map,
+.topic-map .topic-map-expanded section,
+.topic-map section,
+.topic-post article,
+.topic-timer-info {
   border: none;
 }
 
-.topic-map, .archetype-private_message .current-user-post:not(.moderator) .topic-body .cooked {
+.topic-map,
+.archetype-private_message
+  .current-user-post:not(.moderator)
+  .topic-body
+  .cooked {
   background: none;
 }
 

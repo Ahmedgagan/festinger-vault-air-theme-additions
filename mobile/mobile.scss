@@ -1,6 +1,7 @@
-@import 'mobile/topic-view';
+@import "mobile/topic-view";
 
-.top-section .top-sub-section li, .top-section .top-sub-section p {
+.top-section .top-sub-section li,
+.top-section .top-sub-section p {
   margin-right: 0;
 }
 
@@ -22,11 +23,14 @@
   margin-bottom: 0.5em;
 }
 
-.topic-list-item.highlighted, tr.highlighted, .topic-body.highlighted {
+.topic-list-item.highlighted,
+tr.highlighted,
+.topic-body.highlighted {
   animation: none;
 }
 
-.full-width .contents, .loading-container {
+.full-width .contents,
+.loading-container {
   .topic-list .topic-list-body tr.topic-list-item {
     box-shadow: -2px 0 var(--quaternary);
     &:hover {
@@ -53,11 +57,17 @@
   justify-content: space-between;
 }
 
-.topic-item-stats.clearfix::before, .topic-item-stats.clearfix::after {
+.topic-item-stats.clearfix::before,
+.topic-item-stats.clearfix::after {
   display: none;
 }
 
-.full-width .contents .topic-list .topic-list-body .topic-list-item .topic-list-data.posts {
+.full-width
+  .contents
+  .topic-list
+  .topic-list-body
+  .topic-list-item
+  .topic-list-data.posts {
   float: right;
   padding-right: 0.5em;
 }
@@ -87,11 +97,24 @@ html body #main-outlet {
   margin: 0;
 }
 
-html body.static-tos #main-outlet, html body.static-privacy #main-outlet, html body.about-page #main-outlet, html body.static-faq #main-outlet, html body.tags-page #main-outlet, html body.badges-page #main-outlet, html body.archetype-regular #main-outlet, html body.archetype-private_message #main-outlet, html body.admin-interface #main-outlet, html body.user-summary-page #main-outlet, html body.user-activity-page #main-outlet, html body.user-invites-page #main-outlet, html body.user-preferences-page #main-outlet, html body.staff:not(.navigation-topics) #main-outlet {
+html body.static-tos #main-outlet,
+html body.static-privacy #main-outlet,
+html body.about-page #main-outlet,
+html body.static-faq #main-outlet,
+html body.tags-page #main-outlet,
+html body.badges-page #main-outlet,
+html body.archetype-regular #main-outlet,
+html body.archetype-private_message #main-outlet,
+html body.admin-interface #main-outlet,
+html body.user-summary-page #main-outlet,
+html body.user-activity-page #main-outlet,
+html body.user-invites-page #main-outlet,
+html body.user-preferences-page #main-outlet,
+html body.staff:not(.navigation-topics) #main-outlet {
   width: calc(100% - 1em) !important;
   background: transparent;
 }
 
-.container.posts>.row {
+.container.posts > .row {
   max-width: calc(100vw - 1em) !important;
 }

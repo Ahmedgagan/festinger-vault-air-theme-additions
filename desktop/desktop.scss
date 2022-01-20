@@ -5,7 +5,9 @@
   margin: 0;
 }
 
-.topic-body .contents, .topic-body .topic-meta-data, .post-notice p {
+.topic-body .contents,
+.topic-body .topic-meta-data,
+.post-notice p {
   background-color: var(--layer-1-color);
   border-radius: 0.5em;
   padding: 1em;
@@ -18,7 +20,8 @@
   width: calc(100% - 59px);
 }
 
-.topic-body, .archetype-private_message .topic-body .cooked {
+.topic-body,
+.archetype-private_message .topic-body .cooked {
   border: none;
 }
 
@@ -33,15 +36,22 @@
   border-bottom-right-radius: 0;
 }
 
-.archetype-private_message .current-user-post:not(.moderator) .topic-body .cooked, .topic-map {
+.archetype-private_message
+  .current-user-post:not(.moderator)
+  .topic-body
+  .cooked,
+.topic-map {
   background: unset;
 }
 
-.topic-body.highlighted, .archetype-private_message .topic-body.highlighted .cooked {
+.topic-body.highlighted,
+.archetype-private_message .topic-body.highlighted .cooked {
   animation: none;
 }
 
-.topic-map section.map, html .topic-map .topic-map-expanded section, .small-action-desc {
+.topic-map section.map,
+html .topic-map .topic-map-expanded section,
+.small-action-desc {
   background-color: var(--layer-1-color);
   border-radius: 0.5em;
   padding: 1em;
@@ -66,7 +76,10 @@
   margin: 0;
 }
 
-.post-notice, .topic-map, .topic-map section, .topic-timer-info {
+.post-notice,
+.topic-map,
+.topic-map section,
+.topic-timer-info {
   border: none;
 }
 
@@ -85,6 +98,10 @@
 .topic-map {
   margin-left: 0;
 }
+.archetype-private_message .topic-map {
+  padding-top: 0;
+  margin-bottom: 0;
+}
 
 .topic-avatar {
   border: none;
@@ -96,8 +113,9 @@
   padding-left: 1.5em;
 }
 
-.who-liked, .who-read {
-  padding: 0.5em;
+.who-liked,
+.who-read {
+  margin-left: -1em;
 }
 
 .topic-map .buttons .btn {
@@ -110,4 +128,9 @@
 
 .small-action.deleted {
   background-color: none;
+}
+
+.topic-list .posters a:first-child .avatar.latest:not(.single) {
+  box-shadow: none;
+  border: none;
 }

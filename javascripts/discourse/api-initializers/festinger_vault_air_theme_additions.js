@@ -47,5 +47,23 @@ export default apiInitializer("0.11.1", api => {
 
       return CategoryList.list(this.store);
     }
-  })
+  });
+
+  const currentUser = api.getCurrentUser();
+
+  api.decorateWidget("header-buttons:before", (helper) => {
+    if (currentUser) {
+      return;
+    }
+
+    return helper.attach("button", {
+      label: "sign_up",
+      className: "btn-primary btn-small sign-up-button",
+      action: "signUp",
+    });
+  });
+
+  api.attachWidgetAction('header-buttons', 'signUp', () => {
+    window.location = "https://festingervault.com/register/";
+  });
 });
