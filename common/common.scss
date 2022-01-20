@@ -58,14 +58,6 @@ $primary-very-high: mix(
   margin-top: 1em;
 }
 
-.btn-link {
-  color: var(--primary-low);
-
-  &:hover {
-    color: var(--highlight-medium);
-  }
-}
-
 .btn-flat .d-icon,
 nav.post-controls .actions a,
 nav.post-controls .actions button,
@@ -240,7 +232,7 @@ html .nav-pills > li > a {
 
 // topic list
 #list-area .show-more.has-topics .alert {
-  padding: 0;
+  padding: 0.5em 2.5em 0.5em 1em;
 }
 .full-width .contents,
 .loading-container {
@@ -451,16 +443,7 @@ tr.highlighted,
   margin-top: 0;
   color: var(--primary);
 
-  a {
-    color: var(--primary-low);
-
-    &:hover {
-      color: var(--highlight-medium);
-    }
-  }
-
   &.alert-info {
-    background-color: var(--highlight);
     &.clickable {
       color: var(--primary);
     }
