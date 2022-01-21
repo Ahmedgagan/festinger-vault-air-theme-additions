@@ -1,5 +1,9 @@
 @import "mobile/topic-view";
 
+html .nav-pills>li>a {
+  opacity: 1;
+}
+
 .top-section .top-sub-section li,
 .top-section .top-sub-section p {
   margin-right: 0;

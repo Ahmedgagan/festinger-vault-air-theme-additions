@@ -414,15 +414,21 @@ tr.highlighted,
   background-color: var(--layer-1-color);
   margin-bottom: 0.25em;
 
+  &:hover {
+    background-color: var(--card-hover);
+  }
+}
+
+.user-menu #quick-access-notifications li:not(.show-all) {
   &:not(.read) {
     box-shadow: -2px 0 var(--quaternary);
     background-color: var(--layer-1-color);
     margin-left: 4px;
     width: calc(100% - 4px);
-  }
 
-  &:hover {
-    background-color: var(--card-hover);
+    &:hover {
+      background-color: var(--card-hover);
+    }
   }
 }
 
