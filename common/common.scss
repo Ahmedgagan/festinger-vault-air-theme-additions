@@ -72,7 +72,12 @@ nav.post-controls .actions button.create .d-icon {
   color: var(--primary) !important;
 }
 
-.select-kit .select-kit-collection:hover .select-kit-row.is-highlighted:hover, .user-menu .quick-access-panel li:hover, .menu-panel .widget-link:hover, .menu-panel .widget-link:focus, .menu-panel .categories-link:hover, .menu-panel .categories-link:focus {
+.select-kit .select-kit-collection:hover .select-kit-row.is-highlighted:hover,
+.user-menu .quick-access-panel li:hover,
+.menu-panel .widget-link:hover,
+.menu-panel .widget-link:focus,
+.menu-panel .categories-link:hover,
+.menu-panel .categories-link:focus {
   background-color: var(--card-hover);
 }
 
@@ -391,7 +396,8 @@ tr.highlighted,
 .user-stream .user-stream-item,
 .user-invite-none,
 .form-vertical .control-group,
-.top-categories-section table tr {
+.top-categories-section table tr,
+.user-main .staff-counters {
   background-color: var(--layer-1-color);
   border-radius: 0.5em;
   padding: 1em;
@@ -586,6 +592,10 @@ tr.highlighted,
   &:hover {
     background-color: var(--card-hover);
   }
+
+  .category-box-heading {
+    margin-bottom: 1em;
+  }
 }
 
 .category-boxes .category-box .category-box-inner {
@@ -630,4 +640,78 @@ tr.highlighted,
 
 .settings .setting.overridden h3 {
   color: var(--tertiary);
+}
+
+.deleted .regular > .cooked {
+  background-color: transparent;
+}
+
+a.topic-featured-link {
+  color: var(--primary);
+}
+
+.edit-topic-timer-modal .modal-body {
+  width: unset;
+}
+
+.user-main .staff-counters > div,
+.user-main .staff-counters > div a {
+  color: var(--primary);
+}
+
+#topic-progress .bg {
+  background-color: var(--main-background-color);
+}
+
+.select-kit.dropdown-select-box.period-chooser
+  .period-chooser-row
+  .top-date-string,
+.select-kit.dropdown-select-box.period-chooser
+  .period-chooser-header
+  h2.selected-name
+  .top-date-string {
+  color: var(--primary-high);
+}
+
+// footer
+.custom-footer .first-box .heading::before {
+  content: "";
+  width: 11em;
+  height: 4em;
+  padding: 2em 5.5em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 11em;
+  background-image: url(https://festingervaultcommunityuploads.s3.dualstack.eu-central-1.amazonaws.com/original/1X/b0f3b8e0fe34ebf1f59a2009cd6e0cad03e91ba5.png);
+}
+
+.custom-footer .first-box .heading {
+  margin-bottom: 2em;
+}
+
+.custom-footer {
+  background-color: var(--secondary);
+}
+
+.custom-footer .list span {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.custom-footer .second-box .links ul {
+  margin-top: 2em;
+}
+
+.custom-footer .first-box .blurb,
+.custom-footer .footer-section-link-wrapper a {
+  color: #9388cc;
+}
+
+.custom-footer .third-box .social .social-link .d-icon {
+  color: var(--tertiary);
+}
+
+.custom-footer .footer-links {
+  flex: 0;
 }

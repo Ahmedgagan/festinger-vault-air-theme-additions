@@ -110,3 +110,7 @@
 .post-notice {
   background-color: var(--layer-1-color);
 }
+
+.topic-post.deleted article:not([id="post_1"]) {
+  background-color: var(--danger-low-mid);
+}

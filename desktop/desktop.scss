@@ -140,3 +140,24 @@ html .topic-map .topic-map-expanded section,
     max-width: calc(100% - 7em);
   }
 }
+
+.deleted .topic-body div.contents,
+.deleted .topic-body div.topic-meta-data {
+  background-color: var(--danger-low-mid);
+}
+
+.small-action.deleted {
+  background-color: transparent;
+
+  .small-action-desc {
+    background-color: var(--danger-low-mid);
+  }
+}
+
+.small-action .small-action-desc > p {
+  margin: 0;
+  padding-right: 0.5em;
+  line-height: var(--line-height-medium);
+  flex: 1 1;
+  color: #fff;
+}
