@@ -120,3 +120,13 @@ html body.staff:not(.navigation-topics) #main-outlet {
 .container.posts > .row {
   max-width: calc(100vw - 1em) !important;
 }
+
+.jreviews-version-update .post-info.post-date {
+  display: flex;
+  align-self: start;
+  margin-right: 0.5em;
+  margin-top: 1.25em;
+  a {
+    color: var(--primary-med-or-secondary-med);
+  }
+}

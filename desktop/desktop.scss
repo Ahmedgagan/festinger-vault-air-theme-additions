@@ -161,3 +161,13 @@ html .topic-map .topic-map-expanded section,
   flex: 1 1;
   color: #fff;
 }
+
+.jreviews-version-update .post-info.post-date {
+  position: absolute;
+  margin-right: 0;
+  right: 70px;
+  height: 62px;
+  a {
+    color: var(--primary-med-or-secondary-med);
+  }
+}
