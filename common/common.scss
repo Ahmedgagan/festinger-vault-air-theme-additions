@@ -625,6 +625,26 @@ a.topic-featured-link {
 .full-width .contents,
 .loading-container {
   .topic-list .topic-list-body tr.topic-list-item {
+    border-radius: 0.5em;
+    border: none;
+    background-color: var(--layer-1-color);
+    box-shadow: -4px 0 var(--quaternary);
+    &.visited {
+      border: none;
+      box-shadow: none;
+      &:hover {
+        border: none;
+        box-shadow: none;
+        opacity: 1;
+      }
+    }
+    &:hover {
+      background-color: #412379;
+      box-shadow: -4px 0 var(--quaternary);
+      border: none;
+      transition: 20ms ease-in;
+    }
+
     .topic-excerpt {
       display: none;
     }
