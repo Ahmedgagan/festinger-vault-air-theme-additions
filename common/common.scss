@@ -621,3 +621,12 @@ a.topic-featured-link {
   border: 1px solid var(--primary-low-mid);
   background-color: var(--secondary);
 }
+
+.full-width .contents,
+.loading-container {
+  .topic-list .topic-list-body tr.topic-list-item {
+    .topic-excerpt {
+      display: none;
+    }
+  }
+}
