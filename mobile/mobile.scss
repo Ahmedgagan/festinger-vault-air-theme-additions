@@ -61,6 +61,10 @@ tr.highlighted,
   display: none;
 }
 
+.mobile-view .topic-list-item .discourse-tags {
+  overflow: auto;
+}
+
 // .full-width
 //   .contents
 //   .topic-list
